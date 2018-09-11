@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record model="res.groups" id="base.group_notification_email_template_user">
+            <field name="name">notification_email_template</field>
+        </record>
+
+        <record id="notification_email_template_users_access" model="ir.rule">
+            <field name="name">Access to notification_email_template for regular users</field>
+            <field name="model_id" ref="model_mail_template"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'child_of', [user.company_id.id])]</field>
+            <field name="groups" eval="[(4, ref('base.group_notification_email_template_user'))]"/>
+            <field name="global" eval="True" />
+            <field eval="0" name="perm_unlink"/>
+            <field eval="0" name="perm_write"/>
+            <field eval="1" name="perm_read"/>
+            <field eval="0" name="perm_create"/>
+        </record>
+
+        <record id='mail.email_template_tree' model='ir.ui.view'>
+            <field name='groups_id' eval='[(4, ref("base.group_notification_email_template_user"))]' />
+        </record>
+
+    </data>
+</openerp>

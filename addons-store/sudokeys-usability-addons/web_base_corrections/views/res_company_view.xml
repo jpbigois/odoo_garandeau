@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sdk_res_company_form" model="ir.ui.view">
+        <field name="name">SDK res company form</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <field name="currency_id" position="before">
+                <field name="legal_form"/>
+                <field name="capital"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

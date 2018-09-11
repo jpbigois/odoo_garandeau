@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <act_window id="ir_model_data_action"
+                name="ir.model.data"
+                res_model="ir.model.data"
+                view_mode="tree,form"/>
+
+    <menuitem id="ir_model_data_menu"
+              name="ir.model.data"
+              parent="base.next_id_9"
+              sequence="10"
+              action="sudokeys_dev_addon.ir_model_data_action"/>
+
+</odoo>

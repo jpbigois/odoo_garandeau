@@ -1,0 +1,82 @@
+<openerp>
+    <data>
+        <record model="garandeau.societe" id="101">
+            <field name="nomSociete">Garandeau Freres</field>
+            <field name="numSociete">101</field>
+        </record>
+        <record model="garandeau.societe" id="222">
+            <field name="nomSociete">Calcaires Girondins</field>
+            <field name="numSociete">222</field>
+        </record>
+        <record model="garandeau.societe" id="303">
+            <field name="nomSociete">Transco</field>
+            <field name="numSociete">303</field>
+        </record>
+        <record model="garandeau.societe" id="363">
+            <field name="nomSociete">Ambazac Transport</field>
+            <field name="numSociete">363</field>
+        </record>
+        <record model="garandeau.societe" id="461">
+            <field name="nomSociete">Carrieres d'Ambazac</field>
+            <field name="numSociete">461</field>
+        </record>
+        <record model="garandeau.societe" id="680">
+            <field name="nomSociete">Garandeau Betons</field>
+            <field name="numSociete">680</field>
+        </record>
+        <record model="garandeau.societe" id="707">
+            <field name="nomSociete">Fontauliere</field>
+            <field name="numSociete">707</field>
+        </record>
+        <record model="garandeau.societe" id="808">
+            <field name="nomSociete">Societe Nouvelle de Matieriaux</field>
+            <field name="numSociete">808</field>
+        </record>
+        <record model="garandeau.societe" id="944">
+            <field name="nomSociete">Calcaires et Diorites du moulin du Roc</field>
+            <field name="numSociete">944</field>
+        </record>
+
+
+        <!--
+        <record model="garandeau.chauffeur" id="chauff1">
+            <field name="nom">Bigois</field>
+            <field name="prenom">Jean-Philippe</field>
+            <field name="numeroCarte">123456789</field>
+            <field name="fimo"></field>
+        </record>
+        <record model="garandeau.chauffeur" id="chauff2">
+            <field name="nom">Detiege</field>
+            <field name="prenom">Patrick</field>
+            <field name="numeroCarte">987654321</field>
+            <field name="fimo"></field>
+        </record>
+        -->
+        <!--  -->
+        <!--   <record id="object0" model="garandeau.garandeau"> -->
+        <!--     <field name="name">Object 0</field> -->
+        <!--     <field name="value">0</field> -->
+        <!--   </record> -->
+        <!--  -->
+        <!--   <record id="object1" model="garandeau.garandeau"> -->
+        <!--     <field name="name">Object 1</field> -->
+        <!--     <field name="value">10</field> -->
+        <!--   </record> -->
+        <!--  -->
+        <!--   <record id="object2" model="garandeau.garandeau"> -->
+        <!--     <field name="name">Object 2</field> -->
+        <!--     <field name="value">20</field> -->
+        <!--   </record> -->
+        <!--  -->
+        <!--   <record id="object3" model="garandeau.garandeau"> -->
+        <!--     <field name="name">Object 3</field> -->
+        <!--     <field name="value">30</field> -->
+        <!--   </record> -->
+        <!--  -->
+        <!--   <record id="object4" model="garandeau.garandeau"> -->
+        <!--     <field name="name">Object 4</field> -->
+        <!--     <field name="value">40</field> -->
+        <!--   </record> -->
+        <!--  -->
+    </data>
+</openerp>

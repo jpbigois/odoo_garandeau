@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+      <record id="address_garandeaufrere" model="res.partner">
+            <field name="name">Garandeau Freres</field>
+            <field name="street">Chamblanc</field>       <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>      <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>          <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="phone">0545832411</field>        <!-- TELEPHONE -->
+            <field name="fax">0545831170</field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 10775563273</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B775563273</field>
+            <field name="siren">775563273</field>
+            <field name="nic">00017</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">101</field>
+      </record>
+      <record id="societe_garandeaufrere" model="res.company">
+            <field name="name">Garandeau Freres</field>
+            <field name="rml_header1">Groupe de Matériaux de Construction</field>
+            <field name="partner_id" ref="address_garandeaufrere"/>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 10775563273</field>
+            <field name="company_registry">B775563273</field>
+            <field name="siren">775563273</field>
+            <field name="nic">00017</field>
+            <field name="ape">4673A</field>
+            <field name="codesociete">101</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_Garandeau_Groupe.jpg"/>
+      </record>
+
+
+      <record id="address_sciroutedepoitiers" model="res.partner">
+            <field name="name">Sci Route de Poitiers</field>
+            <field name="street">Chamblanc</field>       <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>      <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>          <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="phone">0545837752</field>        <!-- TELEPHONE -->
+            <field name="fax">0545831170</field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 27321582165</field>          <!-- NUMERO TVA INTRACOMMUNAUTAIRE -->
+            <field name="company_registry">D321582165</field>
+            <field name="siren">321582165</field>
+            <field name="nic">00015</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">102</field>
+      </record>
+      <record id="societe_sciroutedepoitiers" model="res.company">
+            <field name="name">Sci Route de Poitiers</field>
+            <field name="rml_header1">Sci Route de Poitiers</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_Sci_Route_Poitiers.jpg"/>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="company_registry">D321582165</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_sciroutedepoitiers"/>
+            <field name="codesociete">102</field>
+            <field name="siren">321582165</field>
+            <field name="nic">00015</field>
+            <field name="ape">4110D</field>
+            <field name="vat"></field>
+      </record>
+
+
+      <record id="address_lescalcairesgirondins" model="res.partner">
+            <field name="name">Les Calcaires Girondins</field>
+            <field name="street">Chamblanc</field>       <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>      <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>          <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="phone">0545837752</field>        <!-- TELEPHONE -->
+            <field name="fax">0545831170</field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 23434997409</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B434997409</field>
+            <field name="siren">434997409</field>
+            <field name="nic">00017</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">222</field>
+      </record>
+      <record id="societe_lescalcairesgirondins" model="res.company">
+            <field name="name">Les Calcaires Girondins</field>
+            <field name="rml_header1">Les Calcaires Girondins</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_lcg.jpg"/>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 23434997409</field>
+            <field name="company_registry">B434997409</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_lescalcairesgirondins"/>
+            <field name="codesociete">222</field>
+            <field name="siren">434997409</field>
+            <field name="nic">00017</field>
+            <field name="ape">4673A</field>
+      </record>
+
+
+      <record id="address_transco" model="res.partner">
+            <field name="name">Transco</field>
+            <field name="street">Chamblanc</field>       <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>      <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>          <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="phone">0545832411</field>        <!-- TELEPHONE -->
+            <field name="fax">0545831170</field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 58312974751</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B312974751</field>
+            <field name="siren">312974751</field>
+            <field name="nic">00017</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">303</field>
+      </record>
+      <record id="societe_transco" model="res.company">
+            <field name="name">Transco</field>
+            <field name="rml_header1">Transco</field>
+            <field name="partner_id" ref="address_transco"/>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="company_registry">B312974751</field>   <!-- SIRET -->
+            <field name="codesociete">303</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_transco.jpg"/>
+            <field name="siren">312974751</field>
+            <field name="nic">00017</field>
+            <field name="ape">4941B</field>
+      </record>
+
+
+      <record id="address_ambazactransport" model="res.partner">
+            <field name="name">Ambazac Transport</field>
+            <field name="street">Chamblanc</field>       <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>      <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>          <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="phone">0545837752</field>        <!-- TELEPHONE -->
+            <field name="fax">0545831170</field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 68529351652</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B529351652</field>
+            <field name="siren">529351652</field>
+            <field name="nic">00019</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">363</field>
+      </record>
+      <record id="societe_ambazactransport" model="res.company">
+            <field name="name">Ambazac Transport</field>
+            <field name="rml_header1">Ambazac Transport</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_Ambazac_Transport.jpg"/>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="company_registry">B529351652</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_ambazactransport"/>
+            <field name="codesociete">363</field>
+            <field name="siren">529351652</field>
+            <field name="nic">00019</field>
+            <field name="ape">4941B</field>
+      </record>
+
+
+      <record id="address_carrieredambazac" model="res.partner">
+            <field name="name">Carrieres d'Ambazac</field>
+            <field name="street">Chamblanc</field>       <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>      <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>          <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="phone">0545832445</field>        <!-- TELEPHONE -->
+            <field name="fax">0545831791</field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 87332150044</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B332150044</field>
+            <field name="siren">332150044</field>
+            <field name="nic">00029</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">461</field>
+      </record>
+      <record id="societe_carrieredambazac" model="res.company">
+            <field name="name">Carrieres d'Ambazac</field>
+            <field name="rml_header1">Carrieres d'Ambazac</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_Carrieres_Ambaza.jpg"/>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="company_registry">B332150044</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_carrieredambazac"/>
+            <field name="codesociete">461</field>
+            <field name="siren">332150044</field>
+            <field name="nic">00029</field>
+            <field name="ape">0812Z</field>
+      </record>
+
+      <record id="address_lmo" model="res.partner">
+            <field name="name">Location materiel Ouest (LMO)</field>
+            <field name="street">Zone d emploi les Savis</field>       <!-- ADRESSE 1 -->
+            <field name="street2"></field>      <!-- ADRESSE 2 -->
+            <field name="zip">16160</field>          <!-- CODE POSTAL -->
+            <field name="city">LE GOND PONTOUVRE</field>        <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="phone">0545680480</field>        <!-- TELEPHONE -->
+            <field name="fax"></field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 57442950903</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B442950903</field>
+            <field name="siren">442950903</field>
+            <field name="nic">00017</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">470</field>
+      </record>
+      <record id="societe_lmo" model="res.company">
+            <field name="name">Location materiel Ouest</field>
+            <field name="rml_header1">LMO</field>
+            <!--<field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_ambazac_carr.jpg"/>-->
+            <field name="email"></field>        <!-- COURRIEL -->
+            <field name="company_registry">B442950903</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_lmo"/>
+            <field name="codesociete">470</field>
+            <field name="siren">442950903</field>
+            <field name="nic">00017</field>
+            <field name="ape">713C</field>
+      </record>
+
+
+      <record id="address_garandeaubeton" model="res.partner">
+            <field name="name">Garandeau Beton</field>
+            <field name="street">Chamblanc</field>                            <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>          <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>                                   <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>                           <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>             <!-- SITE WEB -->
+            <field name="phone">0545832411</field>                            <!-- TELEPHONE -->
+            <field name="fax">0545831170</field>                              <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>            <!-- COURRIEL -->
+            <field name="vat">FR 19424989853</field>                          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B424989853</field>
+            <field name="siren">424989853</field>
+            <field name="nic">00025</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">680</field>
+      </record>
+      <record id="societe_garandeaubeton" model="res.company">
+            <field name="name">Garandeau Beton</field>
+            <field name="rml_header1">Garandeau Beton</field>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="company_registry">B424989853</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_garandeaubeton"/>
+            <field name="codesociete">680</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_Garandeau_Beton.jpg"/>
+            <field name="siren">424989853</field>
+            <field name="nic">00025</field>
+            <field name="ape">2363Z</field>
+      </record>
+
+
+      <record id="address_fontauliere" model="res.partner">
+            <field name="name">Fontauliere</field>
+            <field name="street">Chamblanc</field>       <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>      <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>          <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="phone">0545832411</field>        <!-- TELEPHONE -->
+            <field name="fax">0545831170</field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="vat">FR 83351005129</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B351005129</field>
+            <field name="siren">351005129</field>
+            <field name="nic">00017</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">707</field>
+      </record>
+      <record id="societe_fontauliere" model="res.company">
+      	    <field name="name">Fontauliere</field>
+            <field name="rml_header1">Fontauliere</field>
+            <field name="partner_id" ref="address_fontauliere"/>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="company_registry">B351005129</field>   <!-- SIRET -->
+            <field name="codesociete">707</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_Fontauliere.jpg"/>
+            <field name="siren">351005129</field>
+            <field name="nic">00017</field>
+            <field name="ape">0121Z</field>
+      </record>
+
+
+
+      <record id="address_snm" model="res.partner">
+            <field name="name">SNM</field>
+            <field name="street">Chamblanc</field>       <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>      <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>          <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="phone">0545837752</field>        <!-- TELEPHONE -->
+            <field name="fax">0545831170</field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 63731820106</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B731820106</field>
+            <field name="siren">731820106</field>
+            <field name="nic">00169</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">808</field>
+      </record>
+      <record id="societe_snm" model="res.company">
+            <field name="name">SNM</field>
+            <field name="rml_header1">Garandeau Matériaux</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_Garandeau_Materiaux.jpg"/>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="company_registry">B731820106</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_snm"/>
+            <field name="codesociete">808</field>
+            <field name="siren">731820106</field>
+            <field name="nic">00169</field>
+            <field name="ape">4673A</field>
+      </record>
+
+
+
+      <record id="address_cdmr" model="res.partner">
+            <field name="name">CDMR</field>
+            <field name="street">Chamblanc</field>       <!-- ADRESSE 1 -->
+            <field name="street2">CS 60022 Cherves Richemont</field>      <!-- ADRESSE 2 -->
+            <field name="zip">16121</field>          <!-- CODE POSTAL -->
+            <field name="city">COGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="website">http://www.garandeau.fr</field>      <!-- SITE WEB -->
+            <field name="phone">0545832411</field>        <!-- TELEPHONE -->
+            <field name="fax">0545831170</field>          <!-- FAX  -->
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="vat">FR 65671820207</field>
+            <field name="company_registry">B671820207</field>
+            <field name="siren">671820207</field>
+            <field name="nic">00163</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">944</field>
+      </record>
+      <record id="societe_cdmr" model="res.company">
+            <field name="name">CDMR</field>
+            <field name="rml_header1">Garandeau Production</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_CDMR.JPG"/>
+            <field name="email">compta.client@garandeau.fr</field>        <!-- COURRIEL -->
+            <field name="company_registry">B671820207</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_cdmr"/>
+            <field name="codesociete">944</field>
+            <field name="siren">671820207</field>
+            <field name="nic">00163</field>
+            <field name="ape">0812Z</field>
+      </record>
+
+
+
+      <record id="address_sogiex" model="res.partner">
+            <field name="name">SOGIEX Societe girondine d extraction</field>
+            <field name="street">27 Rue Alessandro Volta</field>       <!-- ADRESSE 1 -->
+            <field name="street2">BP 288</field>      <!-- ADRESSE 2 -->
+            <field name="zip">33697</field>          <!-- CODE POSTAL -->
+            <field name="city">MERIGNAC CEDEX</field>        <!-- VILLE -->
+            <field name="website"></field>      <!-- SITE WEB -->
+            <field name="phone">0556262220</field>        <!-- TELEPHONE -->
+            <field name="fax"></field>          <!-- FAX  -->
+            <field name="email"></field>        <!-- COURRIEL -->
+            <field name="vat">FR 55450135272</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B450135272</field>
+            <field name="siren">450135272</field>
+            <field name="nic">00018</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">995</field>
+      </record>
+      <record id="societe_sogiex" model="res.company">
+            <field name="name">SOGIEX Societe girondine d extraction</field>
+            <field name="rml_header1">SOGIEX</field>
+            <!--<field name="logo" type="base64" file="garandeau/static/src/img/logo_societes/ENT_ambazac_carr.jpg"/>-->
+            <field name="email"></field>        <!-- COURRIEL -->
+            <field name="company_registry">B450135272</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_sogiex"/>
+            <field name="codesociete">995</field>
+            <field name="siren">450135272</field>
+            <field name="nic">00018</field>
+            <field name="ape">0812Z</field>
+      </record>
+
+      <record id="address_sag" model="res.partner">
+            <field name="name">SAG</field>
+            <field name="street">Saint Amant</field>       <!-- ADRESSE 1 -->
+            <field name="street2"></field>      <!-- ADRESSE 2 -->
+            <field name="zip">16120</field>          <!-- CODE POSTAL -->
+            <field name="city">GRAVES</field>        <!-- VILLE -->
+            <field name="website"></field>      <!-- SITE WEB -->
+            <field name="phone"></field>        <!-- TELEPHONE -->
+            <field name="fax"></field>          <!-- FAX  -->
+            <field name="email"></field>        <!-- COURRIEL -->
+            <field name="vat"></field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B408592939</field>
+            <field name="siren">408592939</field>
+            <field name="nic">00016</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">998</field>
+      </record>
+      <record id="societe_sag" model="res.company">
+            <field name="name">SAG</field>
+            <field name="rml_header1">SAG</field>
+            <!--<field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_ambazac_carr.jpg"/>-->
+            <field name="email"></field>        <!-- COURRIEL -->
+            <field name="company_registry">B408592939</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_sag"/>
+            <field name="codesociete">998</field>
+            <field name="siren">408592939</field>
+            <field name="nic">00016</field>
+            <field name="ape">142A</field>
+      </record>
+
+      <record id="address_briquetterie" model="res.partner">
+            <field name="name">Briquetterie d Aytre</field>
+            <field name="street">BP 60025</field>       <!-- ADRESSE 1 -->
+            <field name="street2"></field>      <!-- ADRESSE 2 -->
+            <field name="zip">17441</field>          <!-- CODE POSTAL -->
+            <field name="city">AYTRE CEDEX</field>        <!-- VILLE -->
+            <field name="website"></field>      <!-- SITE WEB -->
+            <field name="phone">0546442430</field>        <!-- TELEPHONE -->
+            <field name="fax">0546451655</field>          <!-- FAX  -->
+            <field name="email"></field>        <!-- COURRIEL -->
+            <field name="vat">FR 92781269584</field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B781269584</field>
+            <field name="siren">781269584</field>
+            <field name="nic">00038</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">816</field>
+      </record>
+      <record id="societe_briquetterie" model="res.company">
+            <field name="name">Briquetterie d Aytre</field>
+            <field name="rml_header1">Briquetterie d Aytre</field>
+            <field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_Briqueterie_Aytre.jpg"/>
+            <field name="email"></field>        <!-- COURRIEL -->
+            <field name="company_registry">B781269584</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_briquetterie"/>
+            <field name="codesociete">816</field>
+            <field name="siren">781269584</field>
+            <field name="nic">00038</field>
+            <field name="ape">4673A</field>
+      </record>
+
+
+      <record id="address_fieflion" model="res.partner">
+            <field name="name">SCI du fief du lion</field>
+            <field name="street">8 Avenue de la Palmyre</field>       <!-- ADRESSE 1 -->
+            <field name="street2"></field>      <!-- ADRESSE 2 -->
+            <field name="zip">17550</field>          <!-- CODE POSTAL -->
+            <field name="city">LES MATHES</field>        <!-- VILLE -->
+            <field name="website"></field>      <!-- SITE WEB -->
+            <field name="phone">0546442430</field>        <!-- TELEPHONE -->
+            <field name="fax">0546451655</field>          <!-- FAX  -->
+            <field name="email"></field>        <!-- COURRIEL -->
+            <field name="vat"></field>          <!-- NUMERO FISCAL -->
+            <field name="company_registry">B442059358</field>
+            <field name="siren">442059358</field>
+            <field name="nic">00014</field>
+            <field name="employee">False</field>
+            <field name="is_company">True</field>
+            <field name="ref">816</field>
+      </record>
+      <record id="societe_fieflion" model="res.company">
+            <field name="name">SCI du fief du lion</field>
+            <field name="rml_header1">SCI du fief du lion</field>
+            <!--<field name="logo" type="base64" file="garandeau_companies/static/src/img/logo_societes/ENT_ambazac_carr.jpg"/>-->
+            <field name="email"></field>        <!-- COURRIEL -->
+            <field name="company_registry">B442059358</field>   <!-- SIRET -->
+            <field name="partner_id" ref="address_fieflion"/>
+            <field name="codesociete">107</field>
+            <field name="siren">442059358</field>
+            <field name="nic">00014</field>
+            <field name="ape">6820B</field>
+      </record>
+
+
+
+      <!--<record id="societe_novapierre" model="res.company">-->
+            <!--<field name="name">Novapierre</field>-->
+            <!--<field name="rml_header1">Ambazac Béton</field>-->
+            <!--<field name="logo" type="base64" file="garandeau/static/src/img/logo_societes/AMBAZAC BETON1.jpg"/>-->
+            <!--<field name="street">Chamblanc</field>       &lt;!&ndash; ADRESSE 1 &ndash;&gt;-->
+            <!--<field name="street2">CS 60022 Cherves Richemont</field>      &lt;!&ndash; ADRESSE 2 &ndash;&gt;-->
+            <!--<field name="zip">16121</field>          &lt;!&ndash; CODE POSTAL &ndash;&gt;-->
+            <!--<field name="city">COGNAC CEDEX</field>        &lt;!&ndash; VILLE &ndash;&gt;-->
+            <!--<field name="website">http://www.garandeau.fr</field>      &lt;!&ndash; SITE WEB &ndash;&gt;-->
+            <!--<field name="phone">0545837752</field>        &lt;!&ndash; TELEPHONE &ndash;&gt;-->
+            <!--<field name="fax">0545831170</field>          &lt;!&ndash; FAX  &ndash;&gt;-->
+            <!--<field name="email">compta.client@garandeau.fr</field>        &lt;!&ndash; COURRIEL &ndash;&gt;-->
+            <!--<field name="vat">FR 87332150044</field>          &lt;!&ndash; NUMERO FISCAL &ndash;&gt;-->
+            <!--<field name="company_registry">3321500440009</field>   &lt;!&ndash; SIRET &ndash;&gt;-->
+            <!--<field name="codesociete">461</field>-->
+      <!--</record>-->
+
+
+
+
+
+
+</odoo>

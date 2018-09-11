@@ -1,0 +1,27 @@
+<openerp>
+  <data>
+
+
+    <record id="view_companygarandeau_form" model="ir.ui.view">
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <!--
+            <label for="name" position="replace">
+                <label for="lastname" class="oe_edit_only"/>
+            </label>
+
+            <field name="name" position="replace">
+                <field name="name" invisible="True" nolabel="1" required="False"/>
+                <field name="lastname"/>
+            </field>
+            -->
+            <field name="parent_id" position="after">
+                <field name="codesociete"/>
+            </field>
+
+      </field>
+    </record>
+
+  </data>
+</openerp>

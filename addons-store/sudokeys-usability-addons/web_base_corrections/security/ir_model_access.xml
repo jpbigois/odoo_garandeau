@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sdk_ir_ui_view_rw" model="ir.model.access">
+        <field name="name">SDK.ir.ui.view.RW</field>
+        <field name="model_id" ref="base.model_ir_ui_view"/>
+        <field name="group_id" ref="base.group_erp_manager"/>
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">0</field>
+        <field name="perm_unlink">0</field>
+    </record>
+
+</odoo>

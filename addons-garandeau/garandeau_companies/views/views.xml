@@ -1,0 +1,50 @@
+<openerp>
+  <data>
+
+    <!-- La ligne ci-dessous a ete mise en commentaire pour installer ce module sur oddo_factu -->
+    <!-- menuitem name="garandeau" id="garandeau.menu_root"/ -->
+
+    <!-- explicit list view definition -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="garandeau.action_window">
+      <field name="name">garandeau window</field>
+      <field name="res_model">garandeau.garandeau</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="garandeau.action_server">
+      <field name="name">garandeau server</field>
+      <field name="model_id" ref="model_garandeau_garandeau"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="garandeau" id="garandeau.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="garandeau.menu_1" parent="garandeau.menu_root"/>
+    <menuitem name="Menu 2" id="garandeau.menu_2" parent="garandeau.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="garandeau.menu_1_list" parent="garandeau.menu_1"
+              action="garandeau.action_window"/>
+    <menuitem name="Server to list" id="garandeau" parent="garandeau.menu_2"
+              action="garandeau.action_server"/>
+    -->
+  </data>
+</openerp>

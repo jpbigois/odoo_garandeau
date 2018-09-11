@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- vim:fdn=3: -->
+<odoo>
+  <template id="assets_backend" name="sudokeys_appswitcher_improved assets" inherit_id="web.assets_backend">
+      <xpath expr="." position="inside">
+          <script type="text/javascript" src="/sudokeys_appswitcher_improved/static/src/js/main.js"></script>
+      </xpath>
+    </template>
+</odoo>
