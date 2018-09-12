@@ -9,56 +9,54 @@ class Garandeau(http.Controller):
 
     @http.route('/ws/createInvoice', auth='public', csrf=False, type="json", methods=['POST'])
     def index(self, **kw):
-        print kw
         facture = kw["facture"]
         mode = kw["mode"]
 
         _logger.info("INFO : %s" %facture)
 
-        print("CLI_%s" %facture["_codeClient"])
-        partner = request.env["res.partner"].sudo().search([("ref","=","CLI_%s" %facture["_codeClient"])])
+        #partner = request.env["res.partner"].sudo().search([("ref","=","%s" %facture["_codeClient"])])
+        partner = request.env["res.partner"].sudo().search([("ref","=","99361")])
+        company = request.env["res.company"].sudo().search([("codesociete","=","%s" %facture["_soc"])])
 
-        if(partner.id == False):
+        if not (partner and company) :
             print("Client \"CLI_%s\" non trouvé dans odoo !" %facture["_codeClient"])
             return False
 
         invoiceLine = []
 
         for line in facture["pageFacture"]:
-            # TODO : A voir pour le filtre de produit (_ pas prit en compte ?)
-            print("%s_%s" %(mode,line["_codeArticle"]))
             product = request.env["product.product"].sudo().search([("default_code","like","%s_%s" %(mode,line["_codeArticle"]))], limit=1)
+            tax = request.env['account.tax'].sudo().search([('company_id', '=', company.id), ('code_it7', '=', line['_codeTVA'])])
             invoiceLine.append((0,0,{
-                "product_id":product.id,
-                "account_id":product.property_account_income_id and product.property_account_income_id.id or 1335,
+                "product_id":product and product.id or False,
+                "account_id":product.property_account_income_id and product.property_account_income_id.id or 4192,
                 "name":line["_libArticle"],
                 "quantity":line["_quantite"],
                 "price_unit": line["_prixUnit"],
-
-                #TODO
-                #_codeTVA
+                "invoice_line_tax_ids" : [(6, None,tax.ids)],
             }))
 
-        print("codeSociete : %i" %facture["_soc"])
-        societe = request.env["res.company"].sudo().search([("codesociete","=", "%i" %facture["_soc"])])
-        journal = request.env["account.journal"].sudo().search([("ref", "=", "CLI_%s" % facture["_codeClient"])])
-
+        date = facture["_date"].split('/')
+        date_due = facture["_echeance"].split('/')
+        journal = request.env["account.journal"].sudo().search([("type", "=", "sale"),("company_id", "=", company.id)])
         invoice = request.env["account.invoice"].sudo().create({
+            "number_invoice_it7":facture["_num"],
+            "date_invoice":date[2]+'-'+date[1]+'-'+date[0],
+            "date_due":date_due[2]+'-'+date_due[1]+'-'+date_due[0],
             "partner_id":partner.id,
-            "journal_id":8,
-            "company_id":11,
-            "account_id":997,
+            "journal_id":journal.id,
+            "company_id":company.id,
+            "account_id":partner.property_account_receivable_id.id,
             "invoice_line_ids":invoiceLine,
             "type":"out_invoice"
         })
 
-        print "On est pas planté !"
 
         # TODO : if not alert -> validation facture
 
-        invoice.action_invoice_open()
+        #request.env.cr.commit()
+        #invoice.action_invoice_open()
 
-        return "Hello, world"
 
     # @http.route('/garandeau/garandeau/objects/', auth='public')
     # def list(self, **kw):
