@@ -228,7 +228,7 @@
 
 
       <record id="address_garandeaubeton" model="res.partner">
-            <field name="name">Garandeau Beton</field>
+            <field name="name">Garandeau Betons</field>
             <field name="street">Chamblanc</field>                            <!-- ADRESSE 1 -->
             <field name="street2">CS 60022 Cherves Richemont</field>          <!-- ADRESSE 2 -->
             <field name="zip">16121</field>                                   <!-- CODE POSTAL -->
