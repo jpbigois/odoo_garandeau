@@ -30,6 +30,7 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',              #Menu root principal
         'views/company.xml',
+        'views/taxes.xml',
 
 
     ],

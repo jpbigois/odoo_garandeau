@@ -1,0 +1,16 @@
+<openerp>
+  <data>
+
+
+    <record id="view_taxesgarandeau_form" model="ir.ui.view">
+        <field name="model">account.tax</field>
+        <field name="inherit_id" ref="account.view_tax_form"/>
+        <field name="arch" type="xml">
+            <field name="active" position="after">
+                <field name="code_it7"/>
+            </field>
+        </field>
+    </record>
+
+  </data>
+</openerp>
